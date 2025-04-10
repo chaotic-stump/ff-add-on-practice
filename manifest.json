@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a purple border to all webpages matching seanparker.dev",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.seanparker.dev/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
